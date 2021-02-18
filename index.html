@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Jonathan Espinales">
+    <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="images/Jonathan.icono.jpg">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *{
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+            <div><img src="/images/Portada.jpg" class="header-img" alt="foto de Portada" width="500" height="500"> </div>
+            <h1 class="header">Jonathan Joel Espinales Mendoza </h1>
+            <h2 class="subtitle">Cuarto 4 <sup>to</sup> Paralelo "A"</h2>
+
+        <nav class="navigation">
+          <ul class="nav-item">
+            <li class="nav-iten">
+                <a href="#acerca">Acerca de </a> 
+            </li>
+
+            <li>
+                <a href="#Proyecto">Mis Proyectos</a> 
+            </li>
+
+            <li>
+                <a href="#Contacto">Contacto</a> 
+            </li>
+          </ul>
+        </nav>
+      </header>
+  
+<main>
+  <section id=acerca>
+    <h2 class="header"> acerca de </h2>
+    <p class="intro">
+
+        <br> Hola Bin benidos A MI Pagina Web, Mi Nombre Es Jonathan Espinales Mendoza, Soy estudiante de la  Universidad Laica "Eloy Alfro de Manabi"<br>
+        <br>de la facultad Ciencias Informaticas "FACCI", actualmente estoy cursando el Cuarto Semestre de la Carrera Ingenieria En Tecnologias de la</br>
+        <br>Informacion. Me gustan mucho las playas y viajar por diferentes partes del ecuador y mi sueño es poder viajar a otros lado del mundo,pero</br>
+        <br>para cumplir con mis metas Propuesta tengo que Seguir esforzandome cada dia y poner de mi parte para llegar a ser un excelente profecional,<br>  
+        <br>Bueno este año a sido muy conplicado para mi ya que hoy en dia me a tocado adactarme a la modalidad virtual ya que las clases  en este año</br>
+        <br>han sido de manera virtual, pero eso no detienem las ganas de seguir adelante,bueno tanbien me gustan los rios la naturaleza, los rios etc </br>
+      
+        <ul class="social-media">
+        <li>
+          <a href="https://twitter.com" target="_blank" rel="noopener">
+              <img src="images//twitter.png" alt="twitter" width="50" height="50"/> 
+             <p class="social-link-text"> Twitter</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com" target="_blank"rel="noopener">
+            <img src="images/github-logo.png" alt="Github" width="50" height="50"/>
+            <p class="social-link-text"> Githb</p> 
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+            <img src="images/linkedin.png" alt="Linkedin" width="50" height="50"/>
+             <p class="social-link-text">Linkedin</p> 
+          </a>
+        </li>
+      </ul>
+    </p>
+  </section>
+
+   <section id=Proyecto>
+    <h2 class="header" id="proyec"> Mi Proyectos </h2>
+    <div class="carousel">
+      <button class="arrow arrow-left" aria-label="Bonton que nos premite ir hacia atras"></button>
+      <div class="window">
+        <ul class="project-container">
+
+          <li class="project1-container"><button class="project1 project">
+            <img src="images/Campo1.jpeg" class="project-img" alt="Campo1" width="500" height="500"></button>
+          </li>
+
+          
+          <li class="project2-container"><button class="project3 project">
+            <img src="images/Campo2.jpeg" class="project-img" alt="Campo2" width="500" height="500"></button>
+          </li>
+
+          <li class="project3-container" aria-hidden="true"><button class="project4 project"
+            tabindex="-1"><img src="images/Campo3.jpeg" class="project-img" alt="Campo3" width="500" height="500"></button>
+          </li>
+
+          <li class="project4-container" aria-hidden="true"><button class="project5 project"
+            tabindex="-1"><img src="images/Playa1.jpeg" class="project-img" alt="Playa1" width="500" height=""></button>
+          </li>
+          <li class="project5-container" aria-hidden="true"><button class="project5 project"
+            tabindex="-1"><img src="images/Playa2.jpeg" class="project-img" alt="Playa2" width="500" height="500"></button>
+          </li>
+        </ul>
+     </div>
+    <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+   </div>
+ </section>
+</main>
+
+<section id=Contacto>
+<footer class="contact-section">
+  <h2 class="header" id="contad">Contacto</h2>
+  <p class="intro">Para manderme un mensaje puedes usar el formulario que sigue</p>
+  <form class="form-container">
+    <label class="form-label">Nombre</label>
+      <input type="text" aria-label="nombre" id="name"/>
+    <span id="name-error" aria-live="assertive"></span> <br/>
+    <label class="form-label">Correo</label>
+      <input type="text" aria-label="correo"/> <br/>
+    <label class="message-input">Mensaje <input type="text" /> <br/></label>
+  <button class="send-button">Enviar</button>
+  </form>
+</footer>
+</section>
+
+  <div class="notification" aria-live="assertive">El formulario fue enviado sin errores</div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="nadal-header" tabindex="0"> </h2> 
+        <div class="fotos">
+        <img src="" class="modal-project-image" alt="pantallazo del proyecto" width="500" height="500"/>
+      </div>
+        <button class="modal-buttom">Cerrar</button>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
